@@ -8,6 +8,8 @@ import * as moment from 'moment';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+opened=false
   title = 'Player';
 
   audios = new Audio();
@@ -25,8 +27,13 @@ export class AppComponent {
   songs=[
     {
       url: './assets/Mem-Vayasuku-Vachcham.mp3',
-      name: 'song1'
+      name: 'Mem Vayasuku Vachcham'
+    },
+    {
+      url: './assets/Kannula-Baasalu-Theliyavule.mp3',
+      name: 'Kannula Baasalu Theliyavule'
     }
+
   ]
 
   currentTime = '00:00';

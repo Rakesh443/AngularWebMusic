@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "weeding": {
+    "AngularWebMusic": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "weeding:build"
+            "browserTarget": "AngularWebMusic:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "weeding:build:production"
+              "browserTarget": "AngularWebMusic:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "weeding:build"
+            "browserTarget": "AngularWebMusic:build"
           }
         },
         "test": {
@@ -111,16 +111,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "weeding:serve"
+            "devServerTarget": "AngularWebMusic:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "weeding:serve:production"
+              "devServerTarget": "AngularWebMusic:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "weeding"
+  "defaultProject": "AngularWebMusic"
 }

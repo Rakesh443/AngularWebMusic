@@ -1,0 +1,22 @@
+#bottom { 
+    display: flex; 
+    flex: 1 1 auto;
+     
+   
+                          
+}
+div {
+    display: flex;
+    align-items: center;
+  }
+
+.songsList{
+    display: flex;
+  flex-direction: column;
+  height: 500px;
+    
+}
+
+.example-margin {
+    margin: 0 10px;
+  }
