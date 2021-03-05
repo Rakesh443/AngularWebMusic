@@ -1,10 +1,5 @@
-<mat-list class="songsList">
-    <mat-list-item *ngFor = "let song of songs" (click) = "openSong(song)"> 
-        {{song.name}}
-    </mat-list-item>
-</mat-list>
 
-<!-- <div id='bottom'>
+<div class='bottom'>
     
     <button mat-icon-button color="accent" aria-label="Example icon button with a heart icon">
         <mat-icon>skip_previous</mat-icon>
@@ -29,8 +24,8 @@
 
 <div>
     <span>{{currentTime}}</span>
-    <mat-progress-bar mode="determinate" min="0" max="{{duration}}" [value]="seek" (input)="setSeek($event)"></mat-progress-bar>
-    <mat-slider class="example-margin" [value]="seek" (input)="setSeek($event)" ></mat-slider>
+    <!-- <mat-progress-bar mode="determinate" min="0" max="{{duration}}" [value]="seek" (input)="setSeek($event)"></mat-progress-bar> -->
+    <!-- <mat-slider class="example-margin" [value]="seek" (input)="setSeek($event)" ></mat-slider> -->
     <input class="example-margin" type="range" min="0" max="{{duration}}" [value]="seek" (input)="setSeek($event)">
     <span>{{duration}}</span>
 </div>
@@ -39,4 +34,4 @@
 <div>
     <label>Volume</label>
     <input type="range" min="0" max="1" step="0.01" value="0.2" (input)="setVolume($event)">
-</div>  -->
+</div> 

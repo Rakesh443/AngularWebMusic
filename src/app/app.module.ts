@@ -15,13 +15,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { SongsComponent } from './songs/songs.component';
 import { AlbumsComponent } from './albums/albums.component';
+import { PlayerComponent } from './player/player.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainNavComponent,
     SongsComponent,
-    AlbumsComponent
+    AlbumsComponent,
+    PlayerComponent
     ],
   imports: [
     BrowserModule,
