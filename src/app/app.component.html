@@ -1,4 +1,7 @@
-<mat-tab-group [selectedIndex]="1">
+
+
+
+<mat-tab-group [selectedIndex]="1" mat-align-tabs="center"> 
     <mat-tab label="Albums">
         Albums
     </mat-tab>
@@ -11,6 +14,8 @@
     </mat-tab>
     <mat-tab label="Others">Others</mat-tab>
 </mat-tab-group>
+
+
 
 <div>
     <button (click)='play()'>play</button>
@@ -30,3 +35,27 @@
     <label>Volume</label>
     <input type="range" min="0" max="1" step="0.01" value="0.2" (input)="setVolume($event)">
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.2.9/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
