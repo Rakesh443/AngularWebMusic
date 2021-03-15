@@ -43,7 +43,7 @@ songs=[
   },
   {
     url: './assets/Kannula-Baasalu-Theliyavule.mp3',
-    name: 'Kannula Baasalu Theliyavule123'
+    name: 'Kannula Baasalu Theliyavule'
   }
 
 ]
