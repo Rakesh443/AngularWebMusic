@@ -10,8 +10,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    env:
-      working-directory: ./js
+    
 
     strategy:
       matrix:
