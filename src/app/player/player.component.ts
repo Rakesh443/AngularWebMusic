@@ -47,6 +47,8 @@ seek = 0;
 streamObserver(song){
   return new Observable(observer =>{
     this.audios.src= song.url;
+    console.log(song.url);
+    
     this.audios.load();
     this.audios.play();
     
@@ -55,7 +57,7 @@ streamObserver(song){
       this.seek=this.audios.currentTime;
       this.duration=this.timeFormate(this.audios.duration).substring(3,);
       this.currentTime = this.timeFormate(this.audios.currentTime).substring(3,);
-     
+     console.log(this.currentTime)
     }
 
     this.addEvents(this.audios, this.audioEvents,handler);
@@ -89,13 +91,13 @@ setVolume(event){
   this.audios.volume =event.target.value ;
 }
 openSong(song){
-
+  console.log("tets")
   this.streamObserver(song).subscribe();
 }
 
 play(){
   this.audios.play();
-  console.log('btn clicked')
+  console.log('btn clicked and')
 }
 
 pause(){

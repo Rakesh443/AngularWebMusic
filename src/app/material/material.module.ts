@@ -6,6 +6,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatSliderModule} from '@angular/material/slider';
 
 const MaterialComponents = [MatButtonModule,
                             MatTabsModule,
@@ -13,7 +14,8 @@ const MaterialComponents = [MatButtonModule,
                             MatIconModule,
                             MatListModule,
                             MatSidenavModule,
-                            MatProgressBarModule
+                            MatProgressBarModule,
+                            MatSliderModule
                           ];
 @NgModule({
   imports: [MaterialComponents],

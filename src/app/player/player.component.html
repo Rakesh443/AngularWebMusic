@@ -1,13 +1,13 @@
 
 <div class='bottom'>
     
-    <button mat-icon-button color="accent" aria-label="Example icon button with a heart icon">
+    <!-- <button mat-icon-button color="accent" aria-label="Example icon button with a heart icon">
         <mat-icon>skip_previous</mat-icon>
-      </button>
+      </button> -->
     <button mat-icon-button color="accent" aria-label="Example icon button with a heart icon" (click)='play()'>
         <mat-icon>play_circle_fill</mat-icon>
       </button>
-      <button mat-icon-button color="accent" aria-label="Example icon button with a heart icon" (click)='pause()'>
+      <!-- <button mat-icon-button color="accent" aria-label="Example icon button with a heart icon" (click)='pause()'>
         <mat-icon>pause_circle_filled</mat-icon>
       </button>
 
@@ -16,7 +16,7 @@
       </button>
       <button mat-icon-button color="accent" aria-label="Example icon button with a heart icon" (click)='stop()'>
         <mat-icon>stop</mat-icon>
-      </button>
+      </button> -->
 
 </div>
 
@@ -24,8 +24,6 @@
 
 <div>
     <span>{{currentTime}}</span>
-    <!-- <mat-progress-bar mode="determinate" min="0" max="{{duration}}" [value]="seek" (input)="setSeek($event)"></mat-progress-bar> -->
-    <!-- <mat-slider class="example-margin" [value]="seek" (input)="setSeek($event)" ></mat-slider> -->
     <input class="example-margin" type="range" min="0" max="{{duration}}" [value]="seek" (input)="setSeek($event)">
     <span>{{duration}}</span>
 </div>

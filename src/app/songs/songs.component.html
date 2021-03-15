@@ -4,39 +4,43 @@
     </mat-list-item>
 </mat-list>
 
-<!-- <div id='bottom'>
-    
-    <button mat-icon-button color="accent" aria-label="Example icon button with a heart icon">
-        <mat-icon>skip_previous</mat-icon>
-      </button>
-    <button mat-icon-button color="accent" aria-label="Example icon button with a heart icon" (click)='play()'>
-        <mat-icon>play_circle_fill</mat-icon>
-      </button>
-      <button mat-icon-button color="accent" aria-label="Example icon button with a heart icon" (click)='pause()'>
-        <mat-icon>pause_circle_filled</mat-icon>
-      </button>
 
-      <button mat-icon-button color="accent" aria-label="Example icon button with a heart icon">
-        <mat-icon>skip_next</mat-icon>
-      </button>
-      <button mat-icon-button color="accent" aria-label="Example icon button with a heart icon" (click)='stop()'>
-        <mat-icon>stop</mat-icon>
-      </button>
 
+<div class="total">
+ 
 </div>
 
+<div class="media-footer">
 
-
-<div>
+  <div>
     <span>{{currentTime}}</span>
-    <mat-progress-bar mode="determinate" min="0" max="{{duration}}" [value]="seek" (input)="setSeek($event)"></mat-progress-bar>
-    <mat-slider class="example-margin" [value]="seek" (input)="setSeek($event)" ></mat-slider>
-    <input class="example-margin" type="range" min="0" max="{{duration}}" [value]="seek" (input)="setSeek($event)">
+    <!-- <mat-progress-bar mode="determinate" min="0" max="{{duration}}" [value]="seek" (input)="setSeek($event)"></mat-progress-bar>
+    <mat-slider class="example-margin" [value]="seek" (input)="setSeek($event)" ></mat-slider> -->
+    <input class="time-slider" type="range" min="0" max="{{absduration}}" step="0.01" [value]="seek" (input)="setSeek($event)">
     <span>{{duration}}</span>
 </div>
 
 
 <div>
     <label>Volume</label>
-    <input type="range" min="0" max="1" step="0.01" value="0.2" (input)="setVolume($event)">
-</div>  -->
+    <input class="time-slider" type="range" min="0" max="1" step="0.01" value="0.2" (input)="setVolume($event)">
+
+  <button mat-icon-button color="accent" aria-label="Example icon button with a heart icon">
+    <mat-icon>skip_previous</mat-icon>
+  </button>
+<button mat-icon-button color="accent" aria-label="Example icon button with a heart icon" (click)='play()'>
+    <mat-icon>play_circle_fill</mat-icon>
+  </button>
+  <button mat-icon-button color="accent" aria-label="Example icon button with a heart icon" (click)='pause()'>
+    <mat-icon>pause_circle_filled</mat-icon>
+  </button>
+
+  <button mat-icon-button color="accent" aria-label="Example icon button with a heart icon">
+    <mat-icon>skip_next</mat-icon>
+  </button>
+  <button mat-icon-button color="accent" aria-label="Example icon button with a heart icon" (click)='stop()'>
+    <mat-icon>stop</mat-icon>
+  </button>
+
+
+</div>
