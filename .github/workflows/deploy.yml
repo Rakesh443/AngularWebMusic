@@ -28,6 +28,6 @@ jobs:
     - name: install firebase
       run: npm i firebase-tools -g  
     -name: building app
-     run: npm run build
+     run: ng build
     - name: deploy
       run: firebase deploy --token ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ISMARTMUSIC }}
