@@ -27,7 +27,7 @@ jobs:
       working-directory: ${{env.working-directory}}
     - name: install firebase
       run: npm i firebase-tools -g  
-    -name: building app
+    - name: building app
     - run: npm install -g @angular/cli > /dev/null
     - run: ng build
     - name: deploy
